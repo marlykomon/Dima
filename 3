@@ -1,0 +1,10 @@
+int[] massive = { 5, 1, 7, 3, 12, 6, 3, 66, 4, 2, 1 };
+int count = 0;
+for (int i = 1; i < massive.Length - 1; i++)
+{
+    if (massive[i - 1] / massive[i + 1] > 2 || massive[i + 1] / massive[i - 1] > 2)
+    {
+        count++;
+    }
+}
+Console.WriteLine(count);
